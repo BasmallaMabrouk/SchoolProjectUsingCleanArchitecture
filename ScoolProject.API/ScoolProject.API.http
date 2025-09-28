@@ -1,0 +1,6 @@
+@ScoolProject.API_HostAddress = http://localhost:5098
+
+GET {{ScoolProject.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
