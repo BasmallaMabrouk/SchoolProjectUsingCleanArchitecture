@@ -17,10 +17,11 @@
     <Folder Include="Features\Students\Command\Models\" />
     <Folder Include="Features\Students\Command\" />
     <Folder Include="Features\Students\Command\Validations\" />
-    <Folder Include="Mapping\" />
+    <Folder Include="Mapping\Students\CommandMapping\" />
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="15.0.1" />
     <PackageReference Include="MediatR" Version="13.0.0" />
   </ItemGroup>
 

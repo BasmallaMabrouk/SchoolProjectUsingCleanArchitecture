@@ -18,7 +18,7 @@ namespace SchoolProject.API.Controllers
         [HttpGet("/Student/List")]
         public async Task<IActionResult> GetStudentList()
         {
-            var respons = await _mediator.Send(new GetStudendListQuery());
+            var respons = await _mediator.Send(new GetStudentListQuery());
             return Ok(respons);
                 
         }

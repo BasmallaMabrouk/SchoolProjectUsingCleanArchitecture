@@ -9,8 +9,10 @@ namespace SchoolProject.Core
     {
         public static IServiceCollection AddCoredependency(this IServiceCollection services)
         {
+            //configration Mediator
             services.AddMediatR(cfg => cfg.RegisterServicesFromAssemblies(Assembly.GetExecutingAssembly()));
-
+            //configration Auto mapper
+            services.AddAutoMapper(cfg => { }, Assembly.GetExecutingAssembly());
             return services;
         }
     }
